@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to left, #00d4ff, #b82dee);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.container{
+  background-color: #eae4d3;
+  padding: 3vh 3vh 3vh 3vh;
+  border-radius: 1rem;
+  
+}
+
+.calculator { 
+    display: grid;
+    justify-content: center; 
+    align-content: center; 
+    border-radius: 5%;
+    grid-template-columns: repeat(4, 100px); 
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); /* Defino a altura das linhas, a primeira é mínima de 120px e as outras 5 são de 100px cada */ 
+}
+
+button {
+    font-size: 2rem; 
+    border: 1px solid black; 
+    background-color: #fef9ff; 
+    box-shadow: 0 4px #cac5b6;
+    cursor: pointer;
+    border-radius: 3%;
+}
+
+.botao2 {
+    grid-column: span 2; /* Faço com que o botão ocupe duas colunas no grid */
+    border-radius: 5%;
+}
+
+.display {
+  font-size: 33px;
+  grid-column: 1 / -1; 
+  display: flex;
+  background-color: #fdf8fd;
+  padding: 26px;
+  border-radius: 0.5rem;
+  text-align: right;
+  height: 5vh;
+  margin: 0.5rem;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
